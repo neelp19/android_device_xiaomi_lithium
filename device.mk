@@ -18,7 +18,7 @@
 $(call inherit-product, vendor/xiaomi/lithium/lithium-vendor.mk)
 
 # Vendor properties
--include $(LOCAL_PATH)/vendor_prop.mk
+include $(LOCAL_PATH)/vendor_prop.mk
 
 # Local overlays
 DEVICE_PACKAGE_OVERLAYS += \
