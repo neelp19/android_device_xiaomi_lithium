@@ -18,7 +18,7 @@
 $(call inherit-product, vendor/xiaomi/lithium/lithium-vendor.mk)
 
 # Vendor properties
-include $(LOCAL_PATH)/vendor_prop.mk
+-include $(LOCAL_PATH)/vendor_prop.mk
 
 # Local overlays
 DEVICE_PACKAGE_OVERLAYS += \
@@ -50,9 +50,9 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/keylayout/uinput-fpc.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/uinput-fpc.kl
 
 # NFC
-#PRODUCT_COPY_FILES += \
- #   $(LOCAL_PATH)/nfc/libnfc-nci.conf:$(TARGET_COPY_OUT_SYSTEM)/etc/libnfc-nci.conf \
-  #  $(LOCAL_PATH)/nfc/libnfc-nxp.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nxp.conf
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/nfc/libnfc-nci.conf:$(TARGET_COPY_OUT_SYSTEM)/etc/libnfc-nci.conf \
+   $(LOCAL_PATH)/nfc/libnfc-nxp.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nxp.conf
 
 # TFA calibration
 PRODUCT_PACKAGES += \
